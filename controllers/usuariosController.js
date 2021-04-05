@@ -1,6 +1,8 @@
+const usuarios = require('../models/usuarios');
+
 const usuariosController = {
     index:(req, res) => {
-        res.send('Estou exibindo essa mensagem através do controller!');
+        res.send(usuarios.listarUsuarios());
     }
 }
 
